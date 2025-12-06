@@ -4,19 +4,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Share } from "@/components/share";
 import { url } from "@/lib/metadata";
-import apple from "@/public/apple.png";
-import banana from "@/public/banana.png";
-import cherry from "@/public/cherry.png";
-import lemon from "@/public/lemon.png";
+const apple = "/apple.png";
+const banana = "/banana.png";
+const cherry = "/cherry.png";
+const lemon = "/lemon.png";
 
 const fruits = ["apple", "banana", "cherry", "lemon"] as const;
 type Fruit = typeof fruits[number];
 
 const fruitImages: Record<Fruit, string> = {
-  apple,
-  banana,
-  cherry,
-  lemon,
+  apple: apple,
+  banana: banana,
+  cherry: cherry,
+  lemon: lemon,
 };
 
 export default function SlotMachine() {
